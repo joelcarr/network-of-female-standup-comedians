@@ -1,0 +1,61 @@
+@import url("reset.css");
+
+:root {
+  font-size: 93.75%;
+  line-height: 1.5;
+}
+
+@media (min-width: 36rem) {
+  :root {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 40rem) {
+  :root {
+    font-size: 106.25%;
+  }
+}
+
+@media (min-width: 44rem) {
+  :root {
+    font-size: 112.5%;
+  }
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  padding: 1rem 0;
+}
+
+main > * + * {
+  margin-top: 1em;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 64rem;
+  padding: 0 1rem;
+}
+
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.tweet-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.twitter-tweet:not(.twitter-tweet-rendered) {
+  padding: 1rem;
+  border: 1px solid #ccd6dd;
+  border-radius: 1em;
+}
