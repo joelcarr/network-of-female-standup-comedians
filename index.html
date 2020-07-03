@@ -37,6 +37,9 @@
       </blockquote>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
+    <div class="full-bleed">
+      <svg class="load-svg" data-load-svg data-url="network-of-female-standup-comedians.svg"></svg>
+    </div>
     <p>The network graph above represents a (mainly) crowd-sourced view of UK, female standup comedians. Initiated by a
       Twitter request to tag "your favorite [sic] female comedians", the 267 responses were mined for Twitter account
       names (729) which were then examined to filter out non-comedians (a suprising number of US politicians were
@@ -99,6 +102,37 @@
     </p>
     <p>To nominate a comedian (even yourself), please tweet me at <a href="https://twitter.com/lescarr">@lescarr</a></p>
   </main>
+
+  <script>
+    async function fetchSvg(url, el) {
+      let response = await fetch(url);
+      let data = await response.text();
+
+      const parser = new DOMParser();
+      const parsed = parser.parseFromString(data, 'image/svg+xml');
+
+      let svg = parsed.getElementsByTagName('svg');
+      if (svg.length) {
+        svg = svg[0];
+      }
+
+      const attributes = svg.attributes;
+      for (let i = 0; i < attributes.length; ++i) {
+        el.setAttribute(attributes[i].name, attributes[i].value);
+      }
+
+      while (svg.childNodes.length) {
+        el.appendChild(svg.childNodes[0]);
+      }
+    }
+
+    window.addEventListener('load', function () {
+      const svgEl = document.querySelector('[data-load-svg]');
+      const svgUrl = svgEl.getAttribute('data-url');
+
+      fetchSvg(svgUrl, svgEl);
+    });
+  </script>
 </body>
 
 </html>
