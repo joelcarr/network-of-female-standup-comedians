@@ -24,8 +24,8 @@
 }
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: systemui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
 
@@ -33,8 +33,8 @@ body {
   padding: 1rem 0;
 }
 
-main > * + * {
-  margin-top: 1em;
+h1 {
+  font-size: 2rem;
 }
 
 .wrapper {
@@ -43,9 +43,9 @@ main > * + * {
   padding: 0 1rem;
 }
 
-.full-bleed {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
+.almost-full-bleed {
+  width: 96vw;
+  margin-left: calc(50% - 48vw);
 }
 
 .tweet-container {

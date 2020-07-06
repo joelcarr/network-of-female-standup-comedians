@@ -14,96 +14,105 @@
 
 <body>
   <main class="wrapper">
-    <h1>The Network of Female Standup Comedians in the UK</h1>
-    <p>Explore the network map below. Each circle represents one comedian. Hover over a circle to see the comedian's
-      photo (as taken from Twitter). Click on the circle to see the comedian's Twitter feed. You can search for and
-      highlight a comedian by using Ctrl-F (your norml browser search function). There is an explanation of how this was
-      generated below.</p>
-    <h2 id="studying-standup-comedy-in-the-uk">Studying Standup Comedy in the UK</h2>
-    <p>I have a professional interest in standup comedy and how it can be used to communicate ideas to a diverse
-      audience. As a Web Science researcher, it's also interesting to me how this grass-roots arts industry organises
-      itself with minimal input from funding organisations. There are different stakeholders - performers, venues,
-      promoters, event organisers, agents, festivals, pubs, clubs - and newcomers to standup have to start developing
-      their skills (at open mic nights) and their network of contacts. What role does the Web play in this - Instagram,
-      Twitter, Facebook, YouTube, edfringe.com, chortle.co.uk, NextUp - the various social and media platforms that
-      allow comedians to be seen and to connect with their peers and their audience. How does the Edinburgh Fringe
-      festival use the Web to engage tens of thousands of perfomers with millions of visitors (mainly tourists) in a
-      single month?</p>
-    <div class="tweet-container">
-      <blockquote class="twitter-tweet">
-        <p lang="en" dir="ltr">HEY! YOU SEEM SMART! <br><br>who are your favorite female comedians we should follow?
-          <br><br>Drop em here!! 👇👇👇👇👇👇</p>&mdash; Beck Flatley (@BeckFlatley) <a
-          href="https://twitter.com/BeckFlatley/status/1275651747441266695?ref_src=twsrc%5Etfw">June 24, 2020</a>
-      </blockquote>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-    <div class="full-bleed">
-      <img src="network-of-female-standup-comedians.svg"
-        alt="Network graph showing twitter interations from a collection of female comedians." loading="lazy">
-    </div>
-    <p>The network graph above represents a (mainly) crowd-sourced view of UK, female standup comedians. Initiated by a
-      Twitter request to tag "your favorite [sic] female comedians", the 267 responses were mined for Twitter account
-      names (729) which were then examined to filter out non-comedians (a suprising number of US politicians were
-      nominated), non-UK-based comedians (the request was originally posted by an American comedian, but it quickly
-      gained traction from a UK audience) and male comedians. Various other accounts were added by scrutinising
-      followers of those accounts resulting in 345 identified Twitter accounts. Tweets between all pairs of those
-      accounts (ie response tweets and mentions) were obtained (limited to the last 100 tweets to any individual) to
-      form a conversational graph based on that network. This graph is drawn as follows:</p>
-    <ul>
-      <li>A line is drawn between two accounts if one account has replied to the other or mentioned the other.</li>
-      <li>The more often a pair of accounts have corresponded, the thicker the line between them and the closer they are
-        drawn together</li>
-      <li>The more followers an account has, the bigger its circle is drawn</li>
-      <li>The graph is coloured according to different "cliques" or regions where those in that region tend to talk to
-        each other more often than they do to people outside the region.</li>
-      <li>The nodes in the graph are labelled with the performer's Twitter account name. Hovering over the node will
-        show their Twitter avatar and clicking on the node will take you to their Twitter profile page.</li>
-    </ul>
-    <h2 id="caveats">Caveats</h2>
-    <p>Not all performers use Twitter. Many prefer Instagram as a way of communicating with their audience.</p>
-    <p>Not all performers have been identified - this is very London-centric at the moment.</p>
-    <p>Having said that I'm very keen to work on this to improve its coverage.</p>
-    <p>Is this useful? Does it say anything? It does tend to group comedians together broadly according to the stages of
-      their careers. This probably reflects some form of homophily - that professional comedians communicate mainly with
-      their peers, and that club comics respond to people that they work with, and that open mic comics will tweet
-      people they see frequently on the open mic circuit. More work required!</p>
-    <h3 id="to-be-added">Comedians to be added in the next map revision</h3>
-    <p>
-      <a href="https://twitter.com/maggiekcomedy">maggiekcomedy</a>,
-      <a href="https://twitter.com/SavenChadha">SavenChadha</a>,
-      <a href="https://twitter.com/TallDarkFriend">TallDarkFriend</a>,
-      <a href="https://twitter.com/rachelwheeley">rachelwheeley</a>,
-      <a href="https://twitter.com/ShaWylie">ShaWylie</a>,
-      <a href="https://twitter.com/sarahbridgeman">sarahbridgeman</a>,
-      <a href="https://twitter.com/FranKissling">FranKissling</a>,
-      <a href="https://twitter.com/Amycromack">Amycromack</a>,
-      <a href="https://twitter.com/stefftodd">stefftodd</a>,
-      <a href="https://twitter.com/ambikamod">ambikamod</a>,
-      <a href="https://twitter.com/beth_o_b">beth_o_b</a>,
-      <a href="https://twitter.com/emilylloydsaini">emilylloydsaini</a>,
-      <a href="https://twitter.com/fionaridgewell">fionaridgewell</a>,
-      <a href="https://twitter.com/floradonald">floradonald</a>,
-      <a href="https://twitter.com/frances_g">frances_g</a>,
-      <a href="https://twitter.com/hattie_delaine">hattie_delaine</a>,
-      <a href="https://twitter.com/hfcripps">hfcripps</a>,
-      <a href="https://twitter.com/isysuttie">isysuttie</a>,
-      <a href="https://twitter.com/katykoren">katykoren</a>,
-      <a href="https://twitter.com/loutaylortrash">loutaylortrash</a>,
-      <a href="https://twitter.com/madeleinebye333">madeleinebye333</a>,
-      <a href="https://twitter.com/mariashehata">mariashehata</a>,
-      <a href="https://twitter.com/shaziamirza1">shaziamirza1</a>,
-      <a href="https://twitter.com/thatsusanmurray">thatsusanmurray</a>,
-      <a href="https://twitter.com/cerysnelmes">cerysnelmes</a>,
-      <a href="https://twitter.com/laurendouglin">laurendouglin</a>,
-      <a href="https://twitter.com/louconran">louconran</a>,
-      <a href="https://twitter.com/Wendy_Wason">Wendy_Wason</a>,
-      <a href="https://twitter.com/amyxander27">amyxander27</a>,
-      <a href="https://twitter.com/CapriellaHooper">CapriellaHooper</a>,
-      <a href="https://twitter.com/sexynedflanders">sexynedflanders</a>
-    </p>
-    <p>To nominate a comedian (even yourself), please tweet me at <a href="https://twitter.com/lescarr">@lescarr</a></p>
+    <article>
+      <h1>The Network of Female Standup Comedians in the UK</h1>
+      <p>Explore the network map below. Each circle represents one comedian. Hover over a circle to see the comedian's
+        photo (as taken from Twitter). Click on the circle to see the comedian's Twitter feed. You can search for and
+        highlight a comedian by using Ctrl-F (your norml browser search function). There is an explanation of how this
+        was
+        generated below.</p>
+      <h2 id="studying-standup-comedy-in-the-uk">Studying Standup Comedy in the UK</h2>
+      <p>I have a professional interest in standup comedy and how it can be used to communicate ideas to a diverse
+        audience. As a Web Science researcher, it's also interesting to me how this grass-roots arts industry organises
+        itself with minimal input from funding organisations. There are different stakeholders - performers, venues,
+        promoters, event organisers, agents, festivals, pubs, clubs - and newcomers to standup have to start developing
+        their skills (at open mic nights) and their network of contacts. What role does the Web play in this -
+        Instagram,
+        Twitter, Facebook, YouTube, edfringe.com, chortle.co.uk, NextUp - the various social and media platforms that
+        allow comedians to be seen and to connect with their peers and their audience. How does the Edinburgh Fringe
+        festival use the Web to engage tens of thousands of perfomers with millions of visitors (mainly tourists) in a
+        single month?</p>
+      <div class="tweet-container">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">HEY! YOU SEEM SMART! <br><br>who are your favorite female comedians we should follow?
+            <br><br>Drop em here!! 👇👇👇👇👇👇</p>&mdash; Beck Flatley (@BeckFlatley) <a
+            href="https://twitter.com/BeckFlatley/status/1275651747441266695?ref_src=twsrc%5Etfw">June 24, 2020</a>
+        </blockquote>
+      </div>
+      <div class="almost-full-bleed">
+        <img src="network-of-female-standup-comedians.svg"
+          alt="Network graph showing twitter interations from a collection of female comedians." loading="lazy">
+      </div>
+      <p>The network graph above represents a (mainly) crowd-sourced view of UK, female standup comedians. Initiated by
+        a
+        Twitter request to tag "your favorite [sic] female comedians", the 267 responses were mined for Twitter account
+        names (729) which were then examined to filter out non-comedians (a suprising number of US politicians were
+        nominated), non-UK-based comedians (the request was originally posted by an American comedian, but it quickly
+        gained traction from a UK audience) and male comedians. Various other accounts were added by scrutinising
+        followers of those accounts resulting in 345 identified Twitter accounts. Tweets between all pairs of those
+        accounts (ie response tweets and mentions) were obtained (limited to the last 100 tweets to any individual) to
+        form a conversational graph based on that network. This graph is drawn as follows:</p>
+      <ul>
+        <li>A line is drawn between two accounts if one account has replied to the other or mentioned the other.</li>
+        <li>The more often a pair of accounts have corresponded, the thicker the line between them and the closer they
+          are
+          drawn together</li>
+        <li>The more followers an account has, the bigger its circle is drawn</li>
+        <li>The graph is coloured according to different "cliques" or regions where those in that region tend to talk to
+          each other more often than they do to people outside the region.</li>
+        <li>The nodes in the graph are labelled with the performer's Twitter account name. Hovering over the node will
+          show their Twitter avatar and clicking on the node will take you to their Twitter profile page.</li>
+      </ul>
+      <h2 id="caveats">Caveats</h2>
+      <p>Not all performers use Twitter. Many prefer Instagram as a way of communicating with their audience.</p>
+      <p>Not all performers have been identified - this is very London-centric at the moment.</p>
+      <p>Having said that I'm very keen to work on this to improve its coverage.</p>
+      <p>Is this useful? Does it say anything? It does tend to group comedians together broadly according to the stages
+        of
+        their careers. This probably reflects some form of homophily - that professional comedians communicate mainly
+        with
+        their peers, and that club comics respond to people that they work with, and that open mic comics will tweet
+        people they see frequently on the open mic circuit. More work required!</p>
+      <h3 id="to-be-added">Comedians to be added in the next map revision</h3>
+      <p>
+        <a href="https://twitter.com/maggiekcomedy">maggiekcomedy</a>,
+        <a href="https://twitter.com/SavenChadha">SavenChadha</a>,
+        <a href="https://twitter.com/TallDarkFriend">TallDarkFriend</a>,
+        <a href="https://twitter.com/rachelwheeley">rachelwheeley</a>,
+        <a href="https://twitter.com/ShaWylie">ShaWylie</a>,
+        <a href="https://twitter.com/sarahbridgeman">sarahbridgeman</a>,
+        <a href="https://twitter.com/FranKissling">FranKissling</a>,
+        <a href="https://twitter.com/Amycromack">Amycromack</a>,
+        <a href="https://twitter.com/stefftodd">stefftodd</a>,
+        <a href="https://twitter.com/ambikamod">ambikamod</a>,
+        <a href="https://twitter.com/beth_o_b">beth_o_b</a>,
+        <a href="https://twitter.com/emilylloydsaini">emilylloydsaini</a>,
+        <a href="https://twitter.com/fionaridgewell">fionaridgewell</a>,
+        <a href="https://twitter.com/floradonald">floradonald</a>,
+        <a href="https://twitter.com/frances_g">frances_g</a>,
+        <a href="https://twitter.com/hattie_delaine">hattie_delaine</a>,
+        <a href="https://twitter.com/hfcripps">hfcripps</a>,
+        <a href="https://twitter.com/isysuttie">isysuttie</a>,
+        <a href="https://twitter.com/katykoren">katykoren</a>,
+        <a href="https://twitter.com/loutaylortrash">loutaylortrash</a>,
+        <a href="https://twitter.com/madeleinebye333">madeleinebye333</a>,
+        <a href="https://twitter.com/mariashehata">mariashehata</a>,
+        <a href="https://twitter.com/shaziamirza1">shaziamirza1</a>,
+        <a href="https://twitter.com/thatsusanmurray">thatsusanmurray</a>,
+        <a href="https://twitter.com/cerysnelmes">cerysnelmes</a>,
+        <a href="https://twitter.com/laurendouglin">laurendouglin</a>,
+        <a href="https://twitter.com/louconran">louconran</a>,
+        <a href="https://twitter.com/Wendy_Wason">Wendy_Wason</a>,
+        <a href="https://twitter.com/amyxander27">amyxander27</a>,
+        <a href="https://twitter.com/CapriellaHooper">CapriellaHooper</a>,
+        <a href="https://twitter.com/sexynedflanders">sexynedflanders</a>
+      </p>
+      <p>To nominate a comedian (even yourself), please tweet me at <a href="https://twitter.com/lescarr">@lescarr</a>
+      </p>
+    </article>
   </main>
 
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 
 </html>
